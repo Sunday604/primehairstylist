@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book an Appointment | PrimeCut</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/theme-init.js"></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"> -->
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="container nav-wrap">
+        <div class="logo">PrimeCut</div>
+        <nav id="navbar">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <a href="services.html">Services</a>
+          <a href="booking.html" class="btn">Book Now</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+          🌙
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="booking">
+      <div class="container">
+        <h2>Book an Appointment</h2>
+        <p>Fill the form below and we’ll reserve your spot.</p>
+
+        <!-- Business Info -->
+        <div class="business-info">
+          <div class="info-grid">
+            <div class="info-item">
+              <h3>📍 Location</h3>
+              <p>Owode, Ogun State</p>
+            </div>
+            <div class="info-item">
+              <h3>⏰ Hours</h3>
+              <p>Mon-Sat: 9AM-7PM<br />Sunday: Closed</p>
+            </div>
+            <div class="info-item">
+              <h3>📞 Contact</h3>
+              <p>+234 903 627 7721</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-wrap">
+          <form
+            name="booking"
+            method="POST"
+            action="/thank-you"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
+            <div class="hidden">
+              <label
+                >Don't fill this out if you're human: <input name="bot-field"
+              /></label>
+            </div>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="080..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="style">Service</label>
+              <select id="style" name="service" required>
+                <option value="">Select service</option>
+                <option value="Classic Haircut">Classic Haircut</option>
+                <option value="Fade & Line-Up">Fade & Line-Up</option>
+                <option value="Beard Grooming">Beard Grooming</option>
+                <option value="Full Package">Full Package</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+
+            <div class="form-group">
+              <label for="time">Time</label>
+              <input type="time" id="time" name="time" required />
+            </div>
+
+            <div class="form-group">
+              <label for="note">Additional Notes (Optional)</label>
+              <textarea
+                id="note"
+                name="note"
+                placeholder="Any special requests..."
+              ></textarea>
+            </div>
+
+            <button class="btn big" type="submit">Submit Booking</button>
+          </form>
+        </div>
+
+        <!-- Booking Policies -->
+        <div class="booking-policies">
+          <h3>Booking Policies</h3>
+          <div class="policies-grid">
+            <div class="policy-item">
+              <h4>📅 Cancellation</h4>
+              <p>Please cancel or reschedule at least 24 hours in advance.</p>
+            </div>
+            <div class="policy-item">
+              <h4>⏰ Late Policy</h4>
+              <p>Late arrivals may result in shortened service time.</p>
+            </div>
+            <div class="policy-item">
+              <h4>💳 Payment</h4>
+              <p>
+                Payment due at time of service. We accept cash and mobile
+                payments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>PrimeCut Barbers</h3>
+            <p>Premium barbering experience with professional service.</p>
+            <div class="social-links">
+              <a href="https://instagram.com" target="_blank" title="Instagram"
+                >📸 Instagram</a
+              >
+              <a href="https://facebook.com" target="_blank" title="Facebook"
+                >f Facebook</a
+              >
+              <a
+                href="https://wa.me/2349036277721"
+                target="_blank"
+                title="WhatsApp"
+                >💬 WhatsApp</a
+              >
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Booking</a>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <a href="#">Classic Cut</a>
+            <a href="#">Fade & Line-Up</a>
+            <a href="#">Beard Grooming</a>
+            <a href="#">Premium Package</a>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p>📞 +234 801 234 5678</p>
+            <p>📍 Owode, Ogun State</p>
+            <p>📧 info@primecut.com</p>
+            <p>⏰ Mon-Sat: 9AM-7PM</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 PrimeCut Barbers. All rights reserved. |
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/theme-toggle.js"></script>
+  </body>
+</html>

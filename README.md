@@ -39,23 +39,23 @@ A modern, responsive website for PrimeCut Barbers with light/dark mode toggle, m
 - Modern web browser
 - Text editor (VS Code recommended)
 
+- A simple HTTP server (Optional)
+
 ### Running Locally
 
+Simply open `index.html` in your browser, or use any HTTP server:
+
 ```bash
-# Navigate to project directory
-cd "PrimeCut Barbershop Website"
+# Method 1: Python
+python -m http.server 8000
 
-# Start local server (choose one method):
-
-# Method 1: Node.js (install http-server first)
+# Method 2: Node.js
 npm install -g http-server
-http-server -p 8000
-
-# Method 2: PHP
-php -S localhost:8000
+http-server .
 ```
 
-Visit `http://localhost:8000` in your browser.
+Then visit your local server
+## 🚀 Deploy to Netlify
 
 ## 🚀 Deploy to Netlify
 
@@ -96,8 +96,6 @@ The booking form uses Netlify Forms. After deployment:
 4. View submissions in the Netlify dashboard
 
 Form submissions will be emailed to your Netlify account email.
-
-## 🎨 Customization
 
 ### Colors
 
@@ -163,3 +161,6 @@ For questions or issues:
 ---
 
 **Built with ❤️ for PrimeCut Barbers**
+browser console for errors
+- Verify WhatsApp phone number is configured correctly in booking.js
+- Test in different browsers
