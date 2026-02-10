@@ -55,6 +55,7 @@ http-server .
 ```
 
 Then visit your local server
+
 ## 🚀 Deploy to Netlify
 
 ## 🚀 Deploy to Netlify
@@ -162,5 +163,6 @@ For questions or issues:
 
 **Built with ❤️ for PrimeCut Barbers**
 browser console for errors
+
 - Verify WhatsApp phone number is configured correctly in booking.js
 - Test in different browsers

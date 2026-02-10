@@ -59,13 +59,8 @@
         </div>
 
         <div class="form-wrap">
-          <form
-            name="booking"
-            method="POST"
-            action="/thank-you"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-          >
+          <form name="booking" data-netlify="true">
+            <input type="hidden" name="form-name" value="booking" />
             <div class="hidden">
               <label
                 >Don't fill this out if you're human: <input name="bot-field"

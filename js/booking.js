@@ -3,7 +3,7 @@ function sendWhatsApp(event) {
     if (event) {
         event.preventDefault();
     }
-    
+
     // Get form values
     let name = document.getElementById("name").value;
     let phone = document.getElementById("phone").value;
