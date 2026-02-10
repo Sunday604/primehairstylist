@@ -19,7 +19,7 @@ function sendWhatsApp(event) {
     }
 
     // WhatsApp number (CHANGE THIS)
-    let whatsappNumber = "2349036277721"; // No +
+    let whatsappNumber = "+2349036277721"; // No +
 
     // Message format
     let message =
